@@ -31,7 +31,7 @@ public class View {
 
         titleLabel = new JLabel("Milk Calculate Result");
         titleLabel.setBounds(200, 50, 150, 100);
-        // สร้าง JLabel สำหรับแสดงผลนมแต่ละชนิด
+        
         labelMilkPlain = new JLabel("Milk Plain: " + milk_plain + " liters");
         labelMilkPlain.setBounds(60, 120, 150, 100);
         labelMilkChoco = new JLabel("Milk Choco: " + milk_choco + " liters");
@@ -39,13 +39,11 @@ public class View {
         labelMilkStrawberry = new JLabel("Milk Strawberry: " + milk_strawberry + " liters");
         labelMilkStrawberry.setBounds(60, 160, 150, 100);
 
-        // เพิ่ม JLabel ลงใน JPanel
         page.add(titleLabel);
         page.add(labelMilkPlain);
         page.add(labelMilkChoco);
         page.add(labelMilkStrawberry);
 
-        // เพิ่ม JPanel ลงใน JFrame
         f.add(page);
     }
 }
